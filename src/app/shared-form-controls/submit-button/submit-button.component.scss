@@ -1,0 +1,16 @@
+:host {
+  @apply w-full;
+}
+
+button {
+  @apply bg-primary;
+  @apply text-white;
+  @apply px-4;
+  @apply py-2;
+  @apply break-words;
+  @apply mt-2;
+}
+
+button:hover {
+  @apply bg-focus;
+}

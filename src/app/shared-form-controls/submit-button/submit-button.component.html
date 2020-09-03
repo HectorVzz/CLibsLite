@@ -1,0 +1,12 @@
+<div class="w-full">
+  <button
+    type="submit"
+    [ngClass]="{
+      'md:w-3/12': width === 'sm',
+      'md:w-6/12': width === 'md',
+      'md:w-full': width === 'lg'
+    }"
+  >
+    {{label}}
+  </button>
+</div>

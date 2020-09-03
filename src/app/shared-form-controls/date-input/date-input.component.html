@@ -1,0 +1,9 @@
+<div class="date-input-container">
+  <label class="form-label">
+    {{label}}
+  </label>
+  <input class="date-input" type="date" [value]="value" (change)="onInput($event.target.value)">
+  <div class="input-error" *ngIf="showError">
+    {{errorText}}
+  </div>
+</div>

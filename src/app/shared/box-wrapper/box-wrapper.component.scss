@@ -1,0 +1,21 @@
+.box-wrapper-container {
+
+}
+
+@screen lg {
+  .box-wrapper-container {
+    @apply bg-white;
+    @apply shadow-md;
+    @apply rounded;
+    // @apply px-8;
+    // @apply pt-6;
+    // @apply pb-8;
+    // @apply mb-4;
+    @apply flex-col;
+    @apply inline-block;
+    @apply bg-gray-100;
+    @apply h-full;
+    @apply flex;
+  }
+
+}

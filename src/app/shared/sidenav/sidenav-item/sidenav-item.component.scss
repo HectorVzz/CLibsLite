@@ -1,0 +1,11 @@
+.active {
+  @apply bg-focus;
+  @apply w-full;
+}
+
+
+.sidenav-item {
+  @apply w-full;
+  @apply block;
+  @apply rounded-md;
+}

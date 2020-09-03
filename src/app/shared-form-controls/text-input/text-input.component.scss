@@ -1,0 +1,30 @@
+.text-input-container {
+ @apply mb-4;
+ @apply w-full;
+}
+
+.text-input {
+  @apply shadow;
+  @apply appearance-none;
+  @apply border;
+  @apply rounded;
+  @apply py-2;
+  @apply px-3;
+  @apply text-gray-700;
+  @apply leading-tight;
+  @apply w-full;
+  @apply block;
+}
+
+.text-input:focus {
+  @apply outline-none;
+  @apply border-focus;
+  @apply border-2
+}
+
+@screen lg {
+  .text-input-container {
+    @apply inline-block;
+    @apply p-1;
+  }
+}

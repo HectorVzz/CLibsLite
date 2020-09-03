@@ -1,0 +1,32 @@
+.select-input-container {
+  @apply mb-4;
+  @apply w-full;
+ }
+
+ .select-input {
+  @apply shadow;
+  @apply appearance-none;
+  @apply border;
+  @apply rounded;
+  @apply py-2;
+  @apply px-3;
+  @apply text-gray-700;
+  @apply leading-tight;
+  @apply w-full;
+  @apply block;
+ }
+
+ .select-input:focus {
+  @apply outline-none;
+  @apply border-focus;
+  @apply border-2;
+  @apply bg-white;
+  @apply border-gray-500;
+}
+
+@screen lg {
+  .select-input-container {
+    @apply inline-block;
+    @apply p-1;
+  }
+}

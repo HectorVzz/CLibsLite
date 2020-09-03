@@ -1,0 +1,23 @@
+.sidenav-container {
+  @apply absolute;
+  @apply w-11/12;
+  @apply flex;
+  @apply flex-row;
+  @apply justify-between;
+  @apply flex-wrap;
+  @apply bg-primary;
+  @apply p-6;
+  @apply h-screen
+
+}
+
+@screen md {
+  .sidenav-container {
+    @apply static;
+    @apply w-full;
+    @apply block;
+    @apply items-start;
+    @apply p-2;
+    @apply h-full;
+  }
+}

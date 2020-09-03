@@ -1,0 +1,35 @@
+<div class="file-input-container">
+  <label class="form-label" for="username">
+    {{label}}
+  </label>
+  <input
+    class="hidden"
+    type="file"
+    accept="image/*"
+    #file
+    multiple
+    (value)="value"
+    (input)="onInput($event.target.value)"
+    (blur)="onTouch()"
+    ng2FileSelect
+    [uploader]="uploader"
+    multiple
+  >
+  <button
+    ng2FileDrop
+    [ngClass]="{'drop-zone': hasBaseDropZoneOver}"
+    (fileOver)="fileOverBase($event)"
+    [uploader]="uploader"
+    class="upload-file-button"
+    type="button"
+    (click)="file.click()"
+  >
+    Upload file
+  </button>
+  <div>
+    Archivos
+    <div *ngFor="let file of getFiles()">
+      {{file.name}}
+    </div>
+  </div>
+</div>

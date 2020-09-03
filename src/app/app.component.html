@@ -1,0 +1,36 @@
+<div class="h-full flex w-full">
+  <app-box-wrapper
+    width="100"
+    height="100"
+    paddingRight="20px"
+    class="min-h-full flex-1 w-4/12"
+  >
+    <app-sidenav
+      class="h-full"
+      [items]="sidenavItems"
+    >
+    </app-sidenav>
+  </app-box-wrapper>
+  <app-box-wrapper
+    width="100"
+    height="100"
+    paddingRight="1%"
+    class="min-h-screen flex-grow flex bg-primary w-8/12">
+    <app-box-wrapper
+      width="100"
+      padding="1%"
+      marginBottom="10px"
+    >
+      <div>
+        TopBar
+      </div>
+    </app-box-wrapper>
+    <app-box-wrapper
+      width="100"
+      padding="1%"
+      class="flex-grow"
+    >
+      <router-outlet></router-outlet>
+    </app-box-wrapper>
+  </app-box-wrapper>
+</div>

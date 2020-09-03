@@ -1,0 +1,26 @@
+.upload-file-button {
+  @apply py-8;
+  @apply px-10;
+  @apply border-2;
+  @apply border-dashed;
+  @apply border-primary;
+  @apply w-full;
+}
+
+.drop-zone {
+  @apply bg-primary;
+  @apply bg-opacity-25;
+}
+
+.file-input-container {
+  @apply mb-2;
+  @apply w-full;
+ }
+
+
+ @screen lg {
+  .file-input-container {
+    @apply inline-block;
+    @apply p-1;
+  }
+}
